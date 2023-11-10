@@ -75,7 +75,7 @@ app.get('/commentsbypost/:postId', async (req, res) => {
     res.json(comments);
 });
 
-app.listen(5001, async () => {
+app.listen(5000, async () => {
     console.log('Server is running on port 5000');
     await connectDB();
 

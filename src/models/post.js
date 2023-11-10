@@ -6,12 +6,13 @@ const postSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Author'
     },
-    content: String,
-    tags: [String],
-    createdAt: {
+    creationDate: {
         type: Date,
         default: new Date()
-    }
+    },
+    description: String,
+    coverImage: String,
+    readTime: String,
 });
 
 export const Post = mongoose.model('Post', postSchema);

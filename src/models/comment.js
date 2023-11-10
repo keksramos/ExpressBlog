@@ -7,7 +7,7 @@ const commentSchema = new mongoose.Schema({
         ref: 'Author'
     },
     content: String,
-    createdAt: {
+    creationDate: {
         type: Date,
         default: new Date()
     }
